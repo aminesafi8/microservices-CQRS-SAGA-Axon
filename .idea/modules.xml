@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/product-service/ProductService.iml" filepath="$PROJECT_DIR$/product-service/ProductService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DiscoveryServer/discovery-server.iml" filepath="$PROJECT_DIR$/DiscoveryServer/discovery-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/microservices-CQRS-SAGA-Axon.iml" filepath="$PROJECT_DIR$/.idea/microservices-CQRS-SAGA-Axon.iml" />
+    </modules>
+  </component>
+</project>
