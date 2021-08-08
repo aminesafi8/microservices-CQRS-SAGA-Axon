@@ -8,10 +8,11 @@ import org.axonframework.modelling.command.AggregateIdentifier;
 import org.axonframework.modelling.command.AggregateLifecycle;
 import org.axonframework.spring.stereotype.Aggregate;
 import org.springframework.beans.BeanUtils;
-import tn.aminesafi.estore.productservice.command.core.events.ProductCreatedEvent;
+import tn.aminesafi.estore.productservice.core.events.ProductCreatedEvent;
 
 import java.math.BigDecimal;
 
+// Hold the current state of the object
 @Aggregate
 @NoArgsConstructor
 // to let axon create everytime a new object and replay all the stored events toi build the object from scratch

@@ -1,4 +1,4 @@
-package tn.aminesafi.estore.productservice.resources;
+package tn.aminesafi.estore.productservice.command.rest;
 
 import lombok.AllArgsConstructor;
 import lombok.val;
@@ -13,15 +13,16 @@ import java.util.UUID;
 @RestController
 @RequestMapping("/products")
 @AllArgsConstructor
-public class ProductResource {
+public class ProductCommandController {
 
     private final Environment environment;
+    // to send the object to a command bus (API to send commands) -> send it to the CommandHandler
     private final CommandGateway commandGateway;
 
-    @GetMapping
+   /* @GetMapping
     public String getProduct() {
         return "HTTP GET Handled " + environment.getProperty("local.server.port");
-    }
+    }*/
 
 
     @PostMapping
@@ -45,7 +46,7 @@ public class ProductResource {
     }
 
 
-    @PutMapping
+ /*   @PutMapping
     public String updateProduct() {
         return "HTTP PUT Handled";
     }
@@ -54,5 +55,5 @@ public class ProductResource {
     @DeleteMapping
     public String deleteProduct() {
         return "HTTP DELETE Handled";
-    }
+    }*/
 }
